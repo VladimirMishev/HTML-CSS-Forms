@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Basic Form</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact Details</h1>
+    </header>
+    <main>
+      <form action="/" method="GET">
+        <section>
+          <h2>Personal Info</h2>
+          <span></span>
+          <ul>
+            <li>
+              <label for="username">Your name</label>
+              <input type="text" name="user-name" id="username" required placeholder="Vladimir Mishev"/>
+            </li>
+            <li>
+              <label for="useremail">Your email</label>
+              <input type="email" name="user-email" id="useremail" required placeholder="admin@domainname.com"/>
+            </li>
+            <li>
+              <label for="userpassword">Your Password</label>
+              <input type="password" name="user-password" id="userpassword" required minlength="8" />
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Additional Details</h2>
+          <span></span>
+          <ul>
+            <li>
+              <label for="userage">Your age</label>
+              <input type="number" step="1" name="user-age" id="userage" />
+            </li>
+            <li>
+              <label for="userdate">Date of birth</label>
+              <input type="date" name="user-date" id="userdate" required/>
+            </li>
+            <li>
+              <label for="user-color">Your favorite color</label>
+              <select name="user-color" id="user-color">
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+                <option value="Black">Black</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Pink">Pink</option>
+              </select>
+            </li>
+            <li>
+              <label for="usermessage">Your message</label>
+              <textarea name="user-message" id="usermessage" rows="4"></textarea>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>How should we verify your account?</h2>
+          <span></span>
+          <ul>
+            <li class="input-radio">
+              <input type="radio" name="user-verification" id="userveremail" value="email"/>
+              <label for="userveremail">By email</label>
+            </li>
+            <li class="input-radio">
+              <input type="radio" name="user-verification" id="userverphone" value="phone"/>
+              <label for="userverphone">By phone</label>
+            </li>
+            <li class="input-radio">
+              <input type="radio" name="user-verification" id="uservercall" value="call"/>
+              <label for="uservercall">By direct call</label>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>How should we contact you?</h2>
+          <span></span>
+          <ul>
+            <li class="input-radio">
+              <input
+                type="checkbox"
+                name="user-contact-email"
+                id="usercontactemail"
+                value="email"
+              />
+              <label for="usercontactemail">Contact me via email</label>
+            </li>
+            <li class="input-radio">
+              <input
+                type="checkbox"
+                name="user-contact-phone"
+                id="usercontactphone"
+                value="phone"
+              />
+              <label for="usercontactphone">Contact me via phone</label>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <span></span>
+          <div class="input-radio">
+            <input type="checkbox" name="user-terms" id="userterms" />
+            <label for="userterms">Agree to terms?</label>
+          </div>
+        </section>
+        <section>
+          <div class="buttons">
+            <button type="reset">Reset your form</button>
+            <button type="submit">Submit your form</button>
+          </div>
+        </section>
+      </form>
+    </main>
+    <footer>
+        <a href="contact-us.html">Contact Us</a>
+    </footer>
+  </body>
+</html>

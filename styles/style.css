@@ -1,0 +1,113 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(212, 211, 211);
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    width: 45%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+form {
+    background-color: rgb(79, 78, 78);
+    margin: 0;
+    padding: 1rem 2rem;
+    color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem rgb(125, 125, 125, 0.8);
+}
+
+h2 {
+    margin-bottom: 0.5rem;
+}
+
+span {
+    display: block;
+    width: 100%;
+    height: 0.03rem;
+    background-color: white;
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+input, textarea, select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0.5rem;
+    font: inherit;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    background-color: rgb(212, 211, 211);
+    border:3px solid rgb(248, 0, 0);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.input-radio input{
+    display: inline;
+    width: auto;
+}
+
+#usercontactphone {
+    margin-bottom: 2rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5rem 0 1rem 0;
+}
+
+button {
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.3rem;
+    border-color: rgb(212, 211, 211);
+    background-color: rgb(212, 211, 211);
+    font: inherit;
+    font-weight: 900;
+    box-shadow: none;
+    cursor: pointer;
+    transition: transform 1s ease-out;
+    transition: background-color 1s ease-in;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: white;
+    color: green
+}
+
+footer {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+footer a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.3rem;
+    transition: background-color 1s ease-out;
+}
+
+footer a:hover {
+    background-color: rgb(79, 78, 78);
+    border: 0.05rem solid rgb(0, 0, 0);
+    color: white;
+}
